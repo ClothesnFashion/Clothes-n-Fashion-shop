@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes n Fashion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 420px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    p.price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .description {
+      text-align: left;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Clothes n Fashion</h1>
+    <img src="https://via.placeholder.com/350x250.png?text=Your+Product+Image" alt="Product">
+    <p class="price">€35</p>
+
+    <div class="description">
+      <strong>Raw denim blossom jeans</strong><br>
+      Waist: 96cm<br>
+      Height: 185–190cm optimal for wearing<br>
+      Hips: 107–112cm<br>
+      More than one available
+    </div>
+
+    <!-- PayPal button -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="moneyflipingac@gmail.com">
+      <input type="hidden" name="item_name" value="Fashion Item">
+      <input type="hidden" name="amount" value="35.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <input type="image" 
+             src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" 
+             border="0" name="submit" 
+             alt="Buy Now with PayPal">
+      <img alt="" border="0" 
+           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" 
+           width="1" height="1">
+    </form>
+  </div>
+</body>
+</html>
